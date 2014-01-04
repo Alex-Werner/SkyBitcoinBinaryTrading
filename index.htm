@@ -3,22 +3,138 @@
 <head>
     <title>SkyBTC - Fly with bitcoin</title>
     <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
-    <link href="css/style.css" rel="stylesheet" />
-    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+
+    <script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+
+
+    <link href="css/general.css" rel="stylesheet" media="screen" />
+    <!--<link href="http://fonts.googleapis.com/css?family=Oswald&amp;v1" rel="stylesheet" type="text/css">-->
 </head>
 <body>
-    <div class="wrapper">
-    <header class="header">=</header>
+    <section id="header">
+        <nav role="navigation">
+            <ul class="hasflex">
+                <li class="box0"><a href="#">Home</a></li>
+                <li class="box0"><a href="#">About</a></li>
+                <li class="box0"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="graph">
+        <div class="centered">GRAPH</div>
+    </section>
+    <main id="main">
+        <div class="centered padded" style="height: 390px;">
+            <aside id="aside1" class="fl">
+                <button class="big sellbtn fl" id="sellbtn1">SELL <p id="sellPrice" class="small"></p></button>
+                <button class="big sellbtn fl" id="sellbtn2">ORDER <p id="sellPrice" class="small"></p></button>
+            </aside>
 
-    <aside class="aside aside-1">Aside 1</aside>
-    <article class="graph">
+            <table id="calcultator" class="fl">
+                <tbody>
+                <tr>
+                    <td class="tRight"><b>Amount</b></td>
+                    <td class="tLeft">
+                        <input id="amount" type="text" class="mendatoryInput" placeholder=" 1 $ / 85 BTC " value="" style="width: 192px"/>
+                        <select id="currency" name="currency" class="trade-currency selectBox" >
+                            <option value="BTC" selected="selected">BTC</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </td>
+                </tr>
 
-    </article>
-    <article class="main">
+                <tr>
+                    <td class="tRight">or Use Percent</td>
+                    <td class="tLeft">percent bar here</td>
+                </tr>
+                <tr>
+                    <td class="tRight"></td>
+                    <td class="tLeft">.</td>
+                </tr>
+                    <tr>
+                        <td class="tRight">Avg Rate</td>
+                        <td class="tLeft"><input id="market-avg" type="text" value="887 USD/BTC"/></td>
+                    </tr>
 
-    </article>
-    <footer class="footer">Made by Alex WERNER - http://www.alexwerner.fr - Bitcoin address : </footer>
-</div>
+                    <tr>
+                        <td class="tRight">Buy At</td>
+                        <td class="tLeft"><input id="buy-at-price" type="text" value="887 USD/BTC"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tRight">Sell at</td>
+                        <td class="tLeft"><input id="sell-at-price" type="text" value="887 USD/BTC"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tRight"></td>
+                        <td class="tLeft hasflex" >Buy at Market Price</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch">
+                                    <div class="onoffswitch-inner"></div>
+                                    <div class="onoffswitch-switch"></div>
+                                </label>
+                            </div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tRight"></td>
+                        <td class="tLeft">.</td>
+                    </tr>
+                    <tr>
+                        <td class="tRight">Stop loss</td>
+                        <td class="tLeft hasflex">- <input id="stop-loss" type="text" value="900"/> <div id="stop-loss-info" class="verysmall"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="tRight">Take Profit</td>
+                        <td class="tLeft hasflex">- <input id="take-profit" type="text" value="800"/> <div id="take-profit-info" class="verysmall"></div>  </td>
+                    </tr>
+                <tr>
+                    <td class="tRight"></td>
+                    <td class="tLeft">.</td>
+                </tr>
+                    <tr>
+                        <td class="tRight">Fee est.</td>
+                        <td class="tLeft"><input id="order-fee" type="text" value="0.002$ (1BTC[4%])"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tRight">Tot. est. on TP</td>
+                        <td class="tLeft"><input id="order-estimated" type="text" value="15$"/></td>
+                    </tr>
+                    <tr>
+                        <td class="tRight"></td>
+                        <td class="tLeft hasflex" >Ask confirm</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch">
+                                    <div class="onoffswitch-inner"></div>
+                                    <div class="onoffswitch-switch"></div>
+                                </label>
+                            </div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <aside id="aside2" class="fl" >
+                <button class="big buybtn fl">BUY<p id="buyPrice" class="small"></p></button>
+                <button class="big buybtn fl">ORDER<p id="buyPrice" class="small"></p></button>
+            </aside>
+        </div>
+        <div style="clear: both"></div>
+        <div>
+            <textarea id="console"></textarea>
+            <table id="current-order">
+                <tr>
+                    <td>Current order</td>
+                </tr>
+            </table>
+            <button onclick="engine();">Manuel refresh</button>
+        </div>
+    </main>
+    <footer id="footer" class="hasflex">Made by Alex WERNER - http://www.alexwerner.fr - Bitcoin address :     </footer>
+    <script src="js/greychart.js"></script>
+
 <script src='js/engine.js'></script>
+
 </body>
 </html>
