@@ -1,7 +1,7 @@
 SkyBitcoinBinaryTrading
 =======================
 
-Trade with binary option on MtGOX. (Bitcoin platform)
+Trade with binary option on MtGOX. (HTML/JS trading platform)
 
 
 How to use :
