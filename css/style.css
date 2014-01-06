@@ -100,8 +100,14 @@ nav{
     line-height: 35px;
     font-family: 'Oswald', arial, serif;
 }
-
-
+#graph{
+    width: 80% !important;
+    float: left;
+}
+#aside{
+    width: 20%;
+    float: left;
+}
 /*twoColums*/
 #twoColums {
     width: 100%;

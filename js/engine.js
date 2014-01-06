@@ -16,6 +16,10 @@ app.order.amount=0;
 app.order.amountcurrency="BTC";
 app.order.takeProfit = 0;
 app.order.stopLoss=0;
+app.order.market ={};
+app.order.market.gap=0;
+app.order.market.totalgap =0;
+app.order.market.usdfee=0;
 
 var ticker={};
 var previousTicker={};
@@ -43,8 +47,13 @@ function processRender()
     $('#sellPrice').html(ticker.sell.value);
     $('#sell-at-price').val(ticker.buy.value);
 
-    $('#market-avg').val(ticker.avg.value);
 
+    $('#market-avg').val(ticker.avg.value);
+    app.order.market.gap = ticker.sell.value-ticker.buy.value;
+    app.order.market.totalgap = app.order.market.gap+app.order.market.usdfee;
+
+    $('#order-market-gap').val(app.order.market.gap+' USD');
+    $('#order-market-totalgap').val(app.order.market.totalgap+' USD');
     if(app.run>0)
     {
 
@@ -93,11 +102,78 @@ function getHistory()
 {
     //https://data.mtgox.com/api/2/BTCUSD/money/wallet/history
 }
+function launchModal(data)
+{
+    if(data.title!=='undefined')
+    {
+    $('#SkyModalTitle').html(data.title);
+    }
 
+    $('#SkyModal').SkyModal_Open();
+}
+function launchException(e_num, e_message)
+{
+    alert('Erreur N°'+e_num+' : '+e_message);
+}
+/*
+ * way : Buy or Sell
+ * type = order / now
+ */
+function startOrder(e)
+{
+    way = e.data.way;
+    type = e.data.type;
+    if(way == 'buy')
+    {
+        if(type=='order')
+        {
+            launchModal({title:"BUYBTC - Order"})
+        }else if(type=='now')
+        {
+            launchModal({title:"BUYBTC - Immediate Buying"})
+        }
+        else
+        {
+            launchException(2,"Order type problem")
+
+        }
+
+    }else if(way=='sell')
+    {
+        if(type=='order')
+        {
+            launchModal({title:"SELBTC - Order"})
+        }else if(type=='now')
+        {
+            launchModal({title:"SELLBTC - Immediate Selling"})
+        }
+        else
+        {
+            launchException(2,"Order type problem")
+
+        }
+    }
+    else
+    {
+        launchException(1,"Order way problem")
+    }
+    console.log('Order launch way:'+way+' type:'+type);
+
+}
 function eventHandler()
 {
-    $('#amount').on('change', handleAmountChange);
-    $('#currency').on('change',handleAmountChange);
+    $('#amount').on('change', getFormDataAndProcess);
+    $('#currency').on('change',getFormDataAndProcess);
+
+    $('#buy-at-price').on('change',getFormDataAndProcess);
+    $('#sell-at-price').on('change', getFormDataAndProcess)
+
+    $('#sellbtn1').on('click',{way:'sell',type:'now'},startOrder);
+    $('#sellbtn2').on('click',{way:'sell',type:'order'},startOrder);
+
+    $('#buybtn1').on('click',{way:'buy',type:'now'},startOrder);
+    $('#buybtn2').on('click',{way:'buy',type:'order'},startOrder);
+
 }
 function convertToUSD(BTCPrice){
     return BTCPrice * ticker.avg.value;
@@ -112,9 +188,7 @@ function aroundNumberBy(by,number)
         return Math.round(number*by)/by;
 }
 //EVENTS
-function handleAmountChange(){
-
-    console.log("AMOUNT CHANGED");
+function getFormDataAndProcess(){
 
     app.order.sell = ticker.sell.value;
     app.order.buy =ticker.buy.value;
@@ -138,10 +212,7 @@ function handleAmountChange(){
     if(app.order.amountcurrency=='BTC')
     {
         var feeUSDPrice =((app.order.amount*app.order.buy*settings.fee)/100);
-        console.log('usd'+feeUSDPrice)
-        console.log('usd'+aroundNumberBy('1000',feeUSDPrice));
         var feeBTCPrice = convertToBTC(feeUSDPrice);
-        console.log('btc'+feeBTCPrice);
     }
     if(app.order.amountcurrency=='USD')
     {
@@ -176,7 +247,6 @@ function handleAmountChange(){
     {
         //Valueur a TP - Valeur d'aujourd'hui en USD
         var USDProfit =(app.order.amount*app.order.stopLoss) - (app.order.amount*app.order.sell);
-        console.log("==>"+app.order.amount);
         var BTCProfit = convertToBTC(feeUSDPrice);
 
         var PERCENTProfit = (((app.order.amount*app.order.stopLoss) / (app.order.amount*app.order.sell))-1)*100;
@@ -188,7 +258,8 @@ function handleAmountChange(){
         var BTCProfit = convertToBTC(feeUSDPrice);
         var PERCENTProfit = (((app.order.amount*app.order.stopLoss) / (app.order.amount*app.order.sell))-1)*100;
     }
-    console.log("==>"+BTCProfit);
+
+    app.order.market.usdfee = feeUSDPrice;
 
     $('#stop-loss-info').html('('+aroundNumberBy('100',USDProfit)+' $ / '+aroundNumberBy('100000',BTCProfit)+' BTC / '+aroundNumberBy('100',PERCENTProfit)+'%)');
 
@@ -223,6 +294,7 @@ function engine(){
     processData();
     getHistory();
     processRender();
+    getFormDataAndProcess();
 
     stopEngine();
 
