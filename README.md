@@ -1,14 +1,14 @@
 SkyBitcoinBinaryTrading
 =======================
 
-Trade with binary option on MtGOX. (Bitcoin platform)
+Trade with binary option on MtGOX. (HTML/JS trading platform)
 
 
 How to use :
 Run index.htm. Enter your secret/token. Enjoy.
 
 What is it ?
-
+--------
 Sky Bitcoin Binary Trading is a webapplication connected with mtgox to let you do in a easiest way some binary order.
 Immediate Buy, Immediate Sell, Stop Loss, Take Profit, Fee estimation, Total gain expectation...
 Plannificate a order at your wanted price.
@@ -17,6 +17,7 @@ Automatise transaction with a trending bot.
 
 
 How contact me ?
+--------
 @obusco on twitter :)
 
 Changelog
