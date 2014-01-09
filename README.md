@@ -7,6 +7,11 @@ Trade with binary option on MtGOX. (HTML/JS trading platform)
 How to use :
 Run index.htm. Enter your secret/token. Enjoy.
 
+Can I Use It ?
+--------
+Actually Not. Here is a Demo of what this app is capable (Nothing else than drawing stuff and calculate other stuff);
+http://skyline-creations.fr/labs/index.html
+
 What is it ?
 --------
 Sky Bitcoin Binary Trading is a webapplication connected with mtgox to let you do in a easiest way some binary order.
