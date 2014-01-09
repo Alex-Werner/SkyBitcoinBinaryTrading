@@ -1,0 +1,56 @@
+<div class="splitter-panel">
+    <div class="CSSTableGenerator" >
+        <table>
+            <tr>
+                <td>MarketPlace</td>
+                <td>Currency</td>
+                <td style="width: 140px">SELL</td>
+                <td style="width: 140px">BUY</td>
+                <td>Market Trend</td>
+                <td>Trader Sentiment</td>
+            </tr>
+            <tr>
+                <td>MTGOX</td>
+                <td>USDBTC</td>
+                <td><a href="#" class="sellBtn">Sell @ <span class="sellPrice"></span>$</a></td>
+                <td><a href="#" class="buyBtn">Buy @ <span class="buyPrice"></span>$</a></td>
+                <td><div id="rateTrend"></div> </td>
+                <td>73% SELL</td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input id="OneClickTrading" type="checkbox"> <label for="OneClickTrading">One click Trading</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="accordion">
+        <div>UTCBTC Graph</div>
+        <div>
+            <section id="graph">
+                <div class="centered">GRAPH</div>
+            </section>
+        </div>
+    </div>
+    <div id="accordion2">
+        <div>> | OPEN TRADES </div>
+        <div id='jqxTabs'>
+            <ul>
+                <li>Overview</li>
+                <li>Open Trades (0)</li>
+                <li>Orders (0)</li>
+                <li>History</li>
+                <li>News</li>
+                <li>Console</li>
+            </ul>
+            <div>OverView</div>
+            <div>Open trades</div>
+            <div>Orders</div>
+            <div>History</div>
+            <div>News</div>
+            <div>
+                <textarea id="console"></textarea>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SkyBitcoinBinaryTrading - Fly with bitcoin</title>
+    <script src='js/jquery-2.0.3.min.js'></script>
+    <script>
+        $.ready(function()
+        {
+            $('#loadingProgress').css('width','10%');
+
+        });
+
+    </script>
+
+    <!-- JQWidget -->
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css" />
+    <!--<link rel="stylesheet" href="jqwidgets/styles/jqx.shinyblack.css" type="text/css" />-->
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.metro.css" type="text/css" />
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtabs.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxexpander.js"></script>
+
+    <!-- CSS -->
+    <link href="css/buttons.css" rel="stylesheet" media="screen" />
+    <link href="css/top_table.css" rel="stylesheet" media="screen" />
+    <link href="css/rightPanel.css" rel="stylesheet" media="screen"/>
+    <link href="css/bottomPanel.css" rel="stylesheet" media="screen"/>
+    <link href="css/progressBar.css" rel="stylesheet" media="screen"/>
+
+    <!-- JS -->
+    <link href="css/core.css" rel="stylesheet" media="screen" />
+    <link href="css/SkyModal.css" rel="stylesheet" media="screen" />
+    <link href="http://fonts.googleapis.com/css?family=Oswald&amp;v1" rel="stylesheet" type="text/css">
+    <script>
+        $.get('view/header.html', function(data) {
+            $('#header').append(data);
+        });
+        $.get('view/left.html', function(data) {
+            $('#leftPanel').append(data);
+        });
+        $.get('view/right.html', function(data) {
+          $('#rightPanel').append(data);
+        });
+        $.get('view/bottom.html', function(data) {
+            $('#bottomPanel').append(data);
+        });
+    </script>
+</head>
+<body>
+<div id="progressBar" style=""><div id="page-wrap">
+
+    <h1>Application loading. Please wait...</h1>
+
+    <p>Please wait while we load the component</p>
+    <div class="meter animate">
+        <span id="loadingProgress"><span>
+
+    </div>
+
+</div>
+</div>
+<!-- BEGIN HEADER -->
+<section id="header">
+</section>
+<!-- END HEADER -->
+<!-- BEGIN CONTENT -->
+<table id="page-table">
+    <tbody>
+    <tr>
+        <td id="page-td">
+            <div id="global">
+                <div id="HorizontalSplitter">
+                    <div>
+                        <div id="VerticalSplitter">
+                            <div id="leftPanel">
+                            </div>
+                            <div id="rightPanel">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 75px" id="bottomPanel"></div>
+                </div>
+            </div><!--#global-->
+        </td>
+    </tr>
+    </tbody>
+</table>
+<!-- END CONTENT -->
+<!-- BEGIN FOOTER -->
+<footer id="footer" class="hasflex">Made by Alex WERNER - http://www.alexwerner.fr - http://www.skyline-creations.fr/- Bitcoin address : 1DSNoKg855ZitnZBuKq4UieyUgRAcZZUD4     </footer>
+<!-- END FOOTER -->
+<div id="SkyModal">
+    <h2 id="SkyModalTitle">SELL</h2>
+    <ul id="SkyModalForm">
+        <li>Current Rate : <span id="SkyModalCurrentRate"></span></li>
+        <li>Risk Level : <i>[NotImplemented]</i></li>
+        <li>Amount : <input type="text" id="SkyModalAmount" value="0"/>
+            <select id="SkyModalCurrency" name="currency" class="trade-currency selectBox">
+                <option value="BTC" selected="selected">BTC</option>
+                <option value="USD">USD</option>
+            </select>
+            <span id="SkyModalAmountConverted"></span>
+        </li>
+        <li>Price : <input id="SkyModalPrice" type="text" value=""/></li>
+
+        <li>Stop Loss: <input id="SkyModalStopLoss" type="text" value=""/></li>
+        <li>Take Profit : <input type="text" id="SkyModalTakeProfit" value=""/></li>
+        <p style="text-align:center"><span id="SkyModalWay"></span> <span id="SkyModalAmount2"></span> units of <span id="SkyModalCurrencyPair"></span> | Fees : <span id="SkyModalTotalFees"></span> $ (Platform :<span id="SkyModalFee"></span> $ + Gap : <span id="SkyModalTotalGap"></span> $)</p>
+        <p style="text-align: center"><button class="buybtn big">Open Trade</button></p>
+    </ul>
+    <p id="SkyModalContent"></p>
+</div>
+</body>
+<script type="text/javascript" src="js/jqwidgets_init.js"></script>
+<script>
+    //LOADER JS
+
+    $('#SkyModal').ready(function(){
+        $.getScript('js/SkyModal.js',function(){
+            $('#SkyModal').SkyModal();
+        });
+
+    });
+    $('#Graph').ready(function(){
+
+        $('#loadingProgress').css('width','20%');
+        $.getScript('js/SkyModal.js');
+        $('#loadingProgress').css('width','30%');
+
+        $.getScript('js/highstock-grey.js');
+        $('#loadingProgress').css('width','40%');
+        $.getScript('js/exporting.js');
+        $('#loadingProgress').css('width','50%');
+
+
+        $('#loadingProgress').css('width','70%');
+        $.getScript('js/engine.js');
+        $('#loadingProgress').css('width','72%');
+
+
+    });
+</script>
+
+</html>

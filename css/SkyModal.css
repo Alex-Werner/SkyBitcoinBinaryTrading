@@ -1,5 +1,6 @@
 #SkyModal {
     width: 480px;
+    height: 450px;
     padding: 30px;
     display: none;
 
@@ -27,7 +28,12 @@
 }
 
 /*** ADDING ****/
-
+#SkyModal ul{
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+}
 #SkyModalForm li{
     display: inline-block;
     background-color: #F4F4F4;
@@ -35,4 +41,11 @@
     width: 100%;
     right: 0;
     left: 0;
+
+    padding: 15px;
+}
+
+#SkyModalForm button{
+    position: relative;
+    bottom: 0;
 }

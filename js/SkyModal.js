@@ -13,7 +13,6 @@
             $('#SkyOverlay').fadeOut(200);
             $('#SkyModal').css({"display": "none"});
             $(this).each(
-                console.log(this),
                 $(this).css({"display": "block"})
             );
 

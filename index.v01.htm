@@ -219,7 +219,7 @@
             <button onclick="engine();">Manuel refresh</button>
         </div>
     </main>
-    <footer id="footer" class="hasflex">Made by Alex WERNER - http://www.alexwerner.fr - Bitcoin address :     </footer>
+    <footer id="footer" class="hasflex">Made by Alex WERNER - http://www.alexwerner.fr - Bitcoin address : 1DSNoKg855ZitnZBuKq4UieyUgRAcZZUD4     </footer>
 
 
 
@@ -228,11 +228,11 @@
         <ul id="SkyModalForm">
             <li>Current Rate : <span id="SkyModalCurrentRate"></span></li>
             <li>Risk Level : Not Implemented</li>
-            <li>Amount : Not Implemented</li>
-            <li>Stop Loss: Not Implemented</li>
-            <li>Take Profit : Not Implemented</li>
-
-                <button class="buybtn big">Open Trade</button>
+            <li>Amount : <input type="text" id="SkyModalAmount" value="140"/> </li>
+            <li>Stop Loss: <input type="text" value="140"/></li>
+            <li>Take Profit : <input type="text" value="140"/></li>
+                <p style="text-align:center"><span id="SkyModalWay"></span> <span id="SkyModalAmount2"></span> units of <span id="SkyModalCurrencyPair"></span> | Fees : <span id="SkyModalTotalFees"></span> $ | Gap : <span id="SkyModalTotalGap"></span> $</p>
+                <p style="text-align: center"><button class="buybtn big">Open Trade</button></p>
         </ul>
         <p id="SkyModalContent"></p>
     </div>

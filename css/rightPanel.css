@@ -1,0 +1,55 @@
+
+#right{
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    overflow-y:scroll;
+    height: 775px;
+}
+#right  header{
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: hsl(0,0%,70%);
+}#right footer {  height: 55px;
+     position: absolute;
+     bottom: 74px;
+     right: 0;
+     left: 0;
+     background: hsl(0,0%,70%);
+ }
+#right  ul {
+    min-height: 0;
+    overflow: auto;
+}
+
+
+/* --------------------------------------- */
+
+#right ul {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    list-style: none;
+    padding: 0;
+    background: hsl(200,100%,90%);
+}
+
+#right  li { padding: 10px; }
+
+#right  li:nth-child(odd) { background: hsl(200,100%,85%); }
+#right div{
+
+}
+#right  .centered{
+    width: auto;
+    display: flex;
+
+    /* doesn't work without prefix */
+    -webkit-flex-flow: column;
+    flex-flow: column;
+
+    box-sizing: border-box;
+    background: hsl(0,0%,80%);
+
+}
