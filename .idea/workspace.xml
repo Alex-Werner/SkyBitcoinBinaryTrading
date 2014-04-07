@@ -2,18 +2,421 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a511d8ed-9d52-4980-9880-545b0c1cb8e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/engine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/models/Api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/models/App.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/models/market/Btce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/models/Market.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/models/Ticker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/config.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/proto.class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\SelectorList.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\SkyModal.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\bottomPanel.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\buttons.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\core.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\general.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\leftPanel.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\progressBar.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\rightPanel.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\right_table.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\css\top_table.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\img\bottom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\img\ico_settings.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\index.v0.1.5.htm.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\index.v01.htm" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.cs-CZ.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.de-DE.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.en-CA.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.en-US.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.fr-FR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.he-IL.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.hr-HR.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.hu-HU.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.it-IT.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.ja-JP.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.lt.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.ru-RU.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.culture.sa-IN.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\globalization\globalize.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqx-all.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxbuttongroup.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxbuttons.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxcalendar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxchart.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxcheckbox.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxcolorpicker.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxcombobox.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxcore.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdata.export.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdata.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdatatable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdatetimeinput.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdocking.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdockpanel.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdragdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdropdownbutton.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxdropdownlist.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxexpander.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgauge.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.aggregates.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.columnsreorder.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.columnsresize.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.edit.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.export.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.filter.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.grouping.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.pager.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.selection.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.sort.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxgrid.storage.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxinput.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxknockout.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxlistbox.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxlistmenu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxmaskedinput.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxmenu.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxnavigationbar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxnumberinput.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxpanel.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxpasswordinput.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxprogressbar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxradiobutton.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxrangeselector.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxrating.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxresponse.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxscrollbar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxscrollview.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxslider.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxsplitter.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxswitchbutton.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxtabs.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxtooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxtouch.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxtree.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxtreegrid.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxtreemap.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxvalidator.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\jqxwindow.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\backImage.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\backgroundTop.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_black.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_black_horizontal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_blackhover.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_blackhover_horizontal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_blackpressed.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_blackpressed_horizontal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_blueenergy.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_darkblue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_darkbluehover.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\bg_darkbluepressed.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\black_gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\blackbackground.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_black.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_blue_indeterminate.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_indeterminate_black.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_indeterminate_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_indeterminate_white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_lightblue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_lightblue_indeterminate.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\check_white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\close.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\close_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\close_white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\colorpicker\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\colorpicker\bar-hue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\colorpicker\bar-saturation.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\colorpicker\map-hue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\colorpicker\map-saturation-overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\colorpicker\map-saturation.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\crosshair-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\crosshair.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_flat_30_cccccc_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_flat_50_5c5c5c_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_glass_20_555555_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_glass_40_0078a3_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_glass_40_ffc73d_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_gloss-wave_25_333333_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_highlight-soft_80_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_inset-soft_25_000000_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-bg_inset-soft_30_f58400_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-icons_4b8e0b_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-icons_a83300_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-icons_cccccc_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkness\ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\darkred_gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\drag.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\dragcancel.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\filter.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-cancel-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-cancel.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-delete - Copy.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-delete-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-delete.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-down-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-down-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-down-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-down.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-edit-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-edit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-first-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-first-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-first-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-first.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-last-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-last-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-last-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-last.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-left-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-left-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-left-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-left.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-right-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-right-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-right-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-right.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-save-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-save.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-showpassword-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-showpassword.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-up-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-up-transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-up-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\icon-up.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_diagonals-small_0_aaaaaa_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_diagonals-thick_15_444444_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_diagonals-thick_95_ffdc2e_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_glass_55_fbf5d0_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_highlight-hard_30_285c00_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_33_3a8104_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_50_4eb305_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_60_4ca20b_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-bg_inset-soft_10_285c00_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-icons_4eb305_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-icons_72b42d_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\le-frog\ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\icon-first.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\icon-last.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_flat_10_000000_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-icons_228ef1_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-icons_ef8c08_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-icons_ffd27a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\lightness\ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\menubutton.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-down-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-down.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-first-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-first.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-last-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-last.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-left-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-left.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-right - Copy.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-right-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-right.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-up-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\metro-icon-up.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\multi-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\office-icon-down.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\office-icon-left.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\office-icon-right.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\office-icon-up.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_flat_0_eeeeee_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_flat_55_c0402a_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_flat_55_eeeeee_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_glass_100_f8f8f8_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_glass_35_dddddd_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_glass_60_eeeeee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_inset-hard_75_999999_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-bg_inset-soft_50_c9c9c9_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-icons_3383bb_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-icons_70b2e1_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-icons_999999_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\overcast\ui-icons_fbc856_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\plus.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\plus_white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\pointer.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\rangebar_classic.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\rangebar_darkblue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\rangebar_shinyblack.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\rangebar_summer.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\red_arrow_down.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\red_arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\red_gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\icon-first.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\icon-last.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-bg_flat_55_fbec88_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-bg_glass_75_d0e5f5_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-bg_glass_85_dfeffc_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-bg_gloss-wave_55_5c9ccc_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-bg_inset-hard_100_f5f8f9_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-bg_inset-hard_100_fcfdfd_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-icons_217bc0_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-icons_469bdd_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-icons_6da8d5_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-icons_d8e7f3_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\redmond\ui-icons_f9bd01_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\roundbg_check_black.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\roundbg_check_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\roundbg_check_indeterminate.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\roundbg_check_white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\roundbg_classic_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\roundbg_classic_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\roundbg_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\search.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\search_white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\smoothness\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sortasc.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sortascbutton.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sortdesc.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sortdescbutton.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sortremove.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\star.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\star_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\star_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_flat_55_999999_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_flat_75_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_glass_45_0078ae_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_glass_55_f8da4e_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_glass_75_79c9ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_gloss-wave_45_e14f1c_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_gloss-wave_50_6eac2c_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_gloss-wave_75_2191c0_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-bg_inset-hard_100_fcfdfd_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-icons_0078ae_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-icons_056b93_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-icons_d8e7f3_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-icons_e0fdff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-icons_f5e175_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-icons_f7a50d_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\start\ui-icons_fcd113_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ReadMe.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_diagonals-medium_20_d34d17_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_flat_30_cccccc_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_flat_50_5c5c5c_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_45_817865_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_60_fece2f_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_70_ffdd57_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_90_fff9e5_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_highlight-soft_100_feeebd_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-bg_inset-soft_30_ffffff_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-icons_3d3d3d_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-icons_bd7b00_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-icons_d19405_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-icons_eb990f_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-icons_ed9f26_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-icons_fadc7a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\sunny\ui-icons_ffe180_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\tick.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\track_classic.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\track_darkblue.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\track_shinyblack.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\track_summer.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\wp_check_indeterminate_white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\images\wp_check_white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.android.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.arctic.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.base.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.black.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.blackberry.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.classic.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.darkblue.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.energyblue.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.fresh.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.highcontrast.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.metro.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.metrodark.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.mobile.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.office.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.orange.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.shinyblack.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.summer.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.ui-darkness.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.ui-le-frog.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.ui-lightness.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.ui-overcast.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.ui-redmond.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.ui-smoothness.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.ui-start.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.ui-sunny.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.web.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\jqwidgets\styles\jqx.windowsphone.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\SkyModal.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\engine._bakjs" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\engine.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\exporting.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\greychart---.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\highstock-grey.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\jqwidgets_init.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js\zino-1.4.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\view\bottom.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\view\header.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\view\left.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\view\right.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SkyBitcoinBinaryTrading.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1388777642882" ignored="false" />
+    <file path="/Dummy.txt" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1396889246236" ignored="false" />
     <file path="/index.html" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1388777818290" ignored="false" />
-    <file path="/index.htm" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1388778792968" ignored="false" />
+    <file path="/index.htm" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1396868233875" ignored="false" />
     <file path="/style.css" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1388780587165" ignored="false" />
     <file path="/.htaccess" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1388781085897" ignored="false" />
+    <file path="/skyBitcoinBinaryTrading.js" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1396872387575" ignored="false" />
+    <file path="/config.js" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1396855424572" ignored="false" />
+    <file path="/Api.js" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1396867365283" ignored="false" />
+    <file path="/Btce.js" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1396865222705" ignored="false" />
+    <file path="/App.js" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1396872290133" ignored="false" />
+    <file path="/README.md" changelist="a511d8ed-9d52-4980-9880-545b0c1cb8e1" time="1396890822032" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,43 +430,44 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="App.js" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/js/models/App.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="5" column="34" selection-start="180" selection-end="180" vertical-scroll-proportion="0.09725401">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="SkyBitcoinBinaryTrading" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.htm">
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="63" selection-start="261" selection-end="261" vertical-scroll-proportion="-3.9230769">
+            <state line="4" column="28" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.031716418">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="engine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/engine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+            <state line="80" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="1.5560641">
               <folding />
             </state>
           </provider>
@@ -87,21 +491,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.htm.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/engine.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/index.htm" />
         <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/proto.class.js" />
+        <option value="$PROJECT_DIR$/js/CORS.js" />
+        <option value="$PROJECT_DIR$/js/models/Ticker.js" />
+        <option value="$PROJECT_DIR$/js/models/Market.js" />
+        <option value="$PROJECT_DIR$/js/models/market/Btce.js" />
+        <option value="$PROJECT_DIR$/js/models/old.html" />
+        <option value="$PROJECT_DIR$/js/models/Api.js" />
+        <option value="$PROJECT_DIR$/js/skyBitcoinBinaryTrading.js" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/index.htm" />
+        <option value="$PROJECT_DIR$/js/models/App.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/config.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="331" />
-    <option name="y" value="297" />
-    <option name="width" value="1152" />
-    <option name="height" value="720" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -161,20 +575,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SkyBitcoinBinaryTrading" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SkyBitcoinBinaryTrading" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -211,14 +611,18 @@
     </servers>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Informatique\Developpement WEB\www\#2014\SkyBitcoinBinaryTrading\v0.1" />
       <recent name="D:\Informatique\Programmation\JS\SkyBitcoinBinaryTrading\js" />
     </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -235,27 +639,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="331" y="297" width="1152" height="720" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4293578" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09711846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -319,30 +723,105 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/engine.js">
+    <entry file="file://$PROJECT_DIR$/js/models/market/Btce.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+        <state line="12" column="16" selection-start="312" selection-end="324" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/js/models/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
+        <state line="7" column="23" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/proto.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="36" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-2.0.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="83612" selection-end="83612" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/proto.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="38" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/Ticker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="3" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/Api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="30" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/Market.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="21" selection-start="994" selection-end="994" vertical-scroll-proportion="0.5547786">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="12" selection-start="644" selection-end="644" vertical-scroll-proportion="0.40236688" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/market/Btce.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="312" selection-end="324" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.495338">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="63" selection-start="261" selection-end="261" vertical-scroll-proportion="-3.9230769">
+        <state line="8" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.16346154" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="34" selection-start="180" selection-end="180" vertical-scroll-proportion="0.09725401">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.031716418">
+        <state line="4" column="28" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="1.5560641">
           <folding />
         </state>
       </provider>
