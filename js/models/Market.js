@@ -1,7 +1,6 @@
 var Market = Class.extend({
     init: function(){
-        this.proxy = App.proxy;
-
+        this.proxy = app.proxy;
 
     },
     request: function(method,params)

@@ -11,7 +11,9 @@ Avoid your emotionnal mistakes and let the soft suggest you.
 Manage your actual order (cancel, etc...)
 Put "wise" bid order, but splitting your total amount in as many bids you will sell when X or Y condition is validated.
 Automatize all transaction with the trading/trend bot
+Automatically determine the best exchange to trade. If need do the withdraw to the second exchange for you.
 And more...
+
 
 A Desktop version is planned (will be written in JS with NodeWebkit).
 
@@ -21,8 +23,14 @@ TODO : the TODO LIST then DO the TodoListItems.
 
 Changelog
 =========================
+V0.2.0b (08/04/2014):
+- Added Cexio api.
+- Added witch between echange you want to use (work still needed on that part)
+
 V0.2.0a (07/04/2014):
+- Rewrote from scratch
 - Added API connected with BTC-E. See "How To Use" for usable methods.
+- Added basic pattern
 
 V0.1 : The v0.1 was some workaround. I'm currently re-writing the soft, preparing a v0.2.
 v0.1 :
@@ -70,7 +78,20 @@ Configuration
 
 Just go on config.js and specify your proper credentials + proxy
 
+Donations
+==================
+I'm giving this soft free of everything.
+But if this helped you or/and if you want to support the development,
+Tip me :)
 
+BTC : 19kHe6UtMWUxjbC2Rx6RLAMVBc9sQuRWgV
+LTC : LPqtA6a61bM2dPeh2R6iUfnfEzTSYAY5qF
+NMC : NBMi3YfzKiEyQmhwKHcVAC9XrQ1FCm4nXk
+DVC : 1MyD7ubgEJ82KV6evvjinHBaXYSY1k4T13
+
+Licence
+=================
+MIT License
 
 Contact-me
 ==================
@@ -78,3 +99,4 @@ I will me more than happy to discuss about everything around Bitcoin and Web. So
 @obusco on twitter at any time, just send me a tweet and I will provide an email for more deep talk.
 
 Also, if you seek for any Web or Software development agency accepting Bitcoin and Litecoin payment, it's here http://skyline-creations.fr/ :)
+
